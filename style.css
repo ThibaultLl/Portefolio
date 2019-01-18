@@ -1,0 +1,648 @@
+@font-face {
+    font-family: 'fippsregular';
+    src: url('fipps-regular-webfont.eot');
+    src: url('fipps-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fipps-regular-webfont.woff2') format('woff2'),
+         url('fipps-regular-webfont.woff') format('woff'),
+         url('fipps-regular-webfont.ttf') format('truetype'),
+         url('fipps-regular-webfont.svg#fippsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html{
+    font-family: 'opensans-bold', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+
+
+body{
+    margin: 0;
+}
+
+#menuToggle{
+  display: none;
+}
+
+.frontpage {
+    width: 100%;
+    height:100%;
+    background-image: url(nightly_training.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    background-size: cover;
+   
+}
+.boutonbas{
+    background-image: url("boutonbas1.png");
+    border: none;
+    font-size: 60px;
+    cursor: pointer;
+    background-size: contain;
+    padding: 28px 28px;
+    margin-left:32%;
+    padding-top: 120px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.boutonbas:hover {
+background-image: url("boutonbas2.png");
+}
+
+.titre{
+    font-family: 'fippsregular', sans-serif;
+}
+
+ul.topnav {
+    font-family: 'fippsregular', sans-serif;
+    font-size: 85%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(51,51,51,0.5);
+    position:fixed;
+    top: 0;
+    width:100%;
+    margin-top: 0;
+    z-index: 1;
+}
+
+.titre2 {
+
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 5em;
+    padding-top: 14.5%;
+    background-image: url('color-pixels.jpg');
+    color:transparent;
+    background-size: cover;
+    margin-top: 0;
+}
+
+.mariobloc{
+   background-image: url("bloc.gif"); /* définit l'image qui va remplir la balise*/
+   position:absolute; /*positionne l'image pour qu'il n'interfere pas et ne sois pas interferé par les autres éléments*/
+    border: none;/*enlève les bordures*/
+    font-size: 20px; /*taille de la box*/
+    background-size: contain;/*on définit la taille de l'image à la taille de la box*/
+    padding: 38px 38px;/*taille de la box*/
+    margin-left: 833px;/*positionnement de la box horizontalement*/
+    margin-top:-436px;/*positionnement de la box verticalement*/
+    background-repeat: no-repeat;/*empêche la répétition de l'image dans la box*/
+
+}
+.mariobloc2{
+   background-image: url("blocanime.gif");/* définit l'image qui va remplir la balise*/
+   position:absolute;/*positionne l'image pour qu'il n'interfere pas et ne sois pas interferé par les autres éléments*/
+    border: none;/*enlève les bordures*/
+    font-size: 20px;/*taille de la box*/
+    background-size: contain;/*on définit la taille de l'image à la taille de la box*/
+    padding: 70px 70px;/*taille de la box*/
+    margin-left: 810px;/*positionnement de la box horizontalement*/
+    margin-top:-505px;/*positionnement de la box verticalement*/
+    background-repeat: no-repeat;/*empêche la répétition de l'image dans la box*/
+    display:none;/*cache la box*/
+}
+
+.mariorepos{
+   background-image: url("mario1.png");
+   position:absolute;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-size: contain;
+    padding: 70px 70px;
+    margin-left: 830px;
+    margin-top:-305px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    
+}
+
+.mariosaut{
+   background-image: url("mario2.png");
+   position:absolute;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-size: contain;
+    padding: 86px 86px;
+    margin-left: 827px;
+    margin-top:-370px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    display:none;
+}
+
+h3 {
+    font-size: 120%;
+    text-shadow: 0 0 0.5em #7749ee, 0 0 0.5em #7749ee;
+    color: #cab9f6;
+    padding-bottom: 21%;
+    
+}
+
+h1, h3{
+    
+    text-align: center;
+}
+
+h2{
+
+    color: white;
+}
+
+.pa1{
+
+    color:#828282;
+    line-height: 200%;
+}
+
+h4{
+
+    line-height: 15%;
+    letter-spacing: 1px;
+    font-size: 1em;
+    margin-left: 24.2%;
+    color: black;   
+}
+.lignes1{
+    width: 123px;
+    padding-bottom: 3px;
+    border-bottom: 3px solid #F06000;
+}
+.lignes2{
+    width: 182px;
+    padding-bottom: 3px;
+    border-bottom: 3px solid #F06000;
+}
+.lignes3{
+    width: 115px;
+    padding-bottom: 3px;
+    border-bottom: 3px solid #F06000;
+}
+h5{
+    padding-top: -2.1%;
+    padding-left: 37.7%;
+    font-size: 25px;
+    color: black; 
+}
+
+.align{
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+}
+.p1 .align:nth-child(2){
+    padding-left: 50px;
+}
+.pa1{
+    color:#828282;
+    line-height: 200%;
+    
+}
+.pa2{
+    color:#A9B6BA;
+    line-height: 200%;
+ 
+    
+}
+
+.pa3{
+    margin-top: -1.5%;
+    color:#636363;
+    padding-left: 37.7%;
+}
+
+.bloc{
+    padding-top: -200%;
+}
+ul.topnav li {
+
+    float: left;
+}
+
+ul.topnav li a {
+
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 1em 5.2em;
+    text-decoration: none;
+
+}
+
+ul.topnav li a:hover {
+    text-shadow: 0 0 0.5em #7749ee, 0 0 0.5em #7749ee;
+    color: #cab9f6;
+}
+
+.p1 {
+    background: #2B2B2B;
+    padding: 3%;
+}
+.photo{
+    position:relative;
+    margin-left: 23%;
+    overflow:hidden;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px;
+    width:120px;
+    height:120px;
+    z-index: 0;
+}
+footer{ 
+   padding-top: 1%;
+   line-height: 50px;
+   text-align: center;
+   height:200px;
+   background: #121212;
+   color:white;
+   vertical-align: baseline;
+   box-sizing: border-box;
+}
+
+
+
+.pa4{
+    padding-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E8E8E8;
+    width: 96%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+ul.topnav li {float: left;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  border-radius: 4px;
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  float:right;
+  margin-bottom: 0;
+  position:fixed;
+}
+
+/* The popup chat - hidden by default */
+.popup {
+  display: none;
+  
+  
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+  position:fixed;
+}
+
+label{
+  color:white;
+}
+/* Add styles to the form container */
+.form-container {
+  width: 285px;
+  padding: 10px;
+  background-color: rgba(90,90,90,0.5);
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  border-radius: 4px;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+
+}
+
+.button {
+  padding: 16px 20px;
+  border-radius: 4px;
+  background-color: rgba(40,40,40);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-bottom:10px;
+  opacity: 1;
+}
+
+.button, span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: relative;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 0,8;
+  right: 0;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: #F06000;
+  opacity: 0,8;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 0,8;
+}
+
+
+form {
+  /* Uniquement centrer le formulaire sur la page */
+  margin: 0 auto;
+  width: 400px;
+  /* Encadré pour voir les limites du formulaire */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  box-shadow: 2px 2px 2px #999;
+}
+
+form div + div {
+  margin-top: 1em; 
+}
+label {
+  /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+  display: block; /*
+  display: inline-block;
+  text-align: right;*/
+  width: 90px;
+  
+
+}
+
+input[type="text"],input[type="email"], textarea {
+  /* Pour s'assurer que tous les champs texte ont la même police.*/
+  font: 1em sans-serif;
+
+  /* Pour que tous les champs texte aient la même dimension */
+  width: 87%;
+  height: 35px;
+  box-sizing: border-box;
+
+  /* Pour harmoniser le look des bordures des champs texte */
+  border: 1px solid #999;
+  box-shadow: 1px 1px 1px #999;
+}
+input[type="text"]:hover,input[type="email"]:hover, textarea:hover {
+    box-shadow: 4px 4px 4px grey;
+}
+
+
+input[type="radio"]:hover{
+   box-shadow: 4px 4px 4px grey;
+}
+
+input:focus, textarea:focus {
+  /* Pour souligner les éléments actifs */
+  border-color: #000;
+
+}
+
+textarea {
+  /* Pour aligner les champs texte multi‑ligne avec leur étiquette */
+  vertical-align: top;
+  box-shadow: 1px 1px 1px #999;
+  /* Pour donner assez de place pour écrire du texte */
+  height: 5em;
+
+}
+
+.btn1 {
+    background-image: url("Linkedin.png");
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-size: contain;
+    padding: 6px 16px;
+    margin-right: 40px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.btn2 {
+    background-image: url("github-logo.png");
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-size: contain;
+    padding: 6px 16px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.btn1:hover {
+background-image: url("Linkedin-1.png");
+}
+
+.btn2:hover {
+    background-image: url("github-logo-1.png");
+}
+
+@media (max-width: 768px){
+  body{
+    width: auto;
+
+    }
+    ul.topnav li.right,
+    ul.topnav li {
+        float:none;
+    }
+  form{
+    width: auto;
+  }
+    .titre2{
+        font-size: 1.9em;
+    }
+    h3{
+        font-size: 0.6em;
+    }
+
+    .photo{
+    
+        display: none;
+    }
+
+    h4{
+        margin-left: 5.2%;
+    }
+
+    h5{
+        padding-left: 13.2%;
+    }
+    .pa3{
+        padding-left: 20%;
+        padding-right: 10%;
+    }
+
+    /*navbar version menu burger : */
+     #menuDesktop{
+    display: none;
+      }
+
+      a{
+        text-decoration: none;
+        color: #232323;
+        transition: color 0.3s ease;
+      }
+
+      a:hover
+      {
+        text-shadow: 0 0 0.5em #7749ee, 0 0 0.5em #7749ee;
+        color: #cab9f6;
+      }
+
+  /* on affiche le menu dédié au mobile */ 
+  #menuToggle
+  {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle input
+  {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    
+    opacity: 0; /* on cache le bouton */
+    z-index: 2; /* Et on le place devant le bouton burger */
+    
+    -webkit-touch-callout: none;
+  }
+
+  /*
+   * Design du bouton burger
+   */
+  #menuToggle span
+  {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    box-shadow: 0 0 0.5em #7749ee, 0 0 0.5em #7749ee;
+    color: #cab9f6;
+    border-radius: 3px;
+    
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    
+  }
+
+
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    background: #232323;
+  }
+
+
+
+  /*  Positionnnement absolute du menu 
+   * 
+   */
+  #menu
+  {
+    border-radius: 50px;
+    width: 130px;
+    height: 120px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 100px;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+    font-family: 'fippsregular', sans-serif;
+    overflow: hidden;
+    background-color: rgba(51,51,51,0.3);
+    position:fixed;
+    text-shadow: 0 0 0.5em #7749ee, 0 0 0.5em #7749ee;
+    color: #cab9f6;
+  }
+  a{
+    font-size: 5%;
+  }
+  #menu li
+  {
+    opacity:0,9;
+    padding: 10px 0;
+    font-size: 15px;
+  }
+
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
+
+}

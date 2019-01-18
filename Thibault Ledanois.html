@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<title>Thibault Ledanois</title>
+		<link rel="shortcut icon" href="pdp2.jpg" >
+		<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="frontpage" id="frontpage">
+		<div id="menuDesktop">
+			<ul class="topnav">
+			  <li><a href="#frontpage" class="accueil">ACCUEIL</a></li>
+			  <li><a href="#p1" class="apropos">A PROPOS</a></li>
+			  <li><a href="#p2" class="experiences">EXPERIENCES</a></li>
+			</ul>
+		</div>
+		<div id="menuToggle">
+		    
+		    <input type="checkbox" />
+		    
+
+		    <span></span>
+		    <span></span>
+		    <span></span>
+		    
+
+		    <ul id="menu">
+		      <a href="#frontpage"><li>ACCUEIL</li></a>
+		      <a href="#p1"><li>A PROPOS</li></a>
+		      <a href="#p2"><li>EXPERIENCES</li></a>
+		    </ul>
+		</div>
+
+		<div class="titre">
+
+			<h1 class="titre2">Thibault Ledanois </h1>
+			<h3>Etudiant Ynov Informatique • Nantes Ynov Campus</h3>
+		</div>
+	</div>
+	<div class="p1" id="p1">
+		<div class="photo align">
+    	<img src="pdp.jpg" width=100% height=100% >
+		</div>
+			<div class="align">
+						<a class="boutonbas" href="#p1"></a>
+				<h2>A propos</h2>
+				<button class="open-button" onclick="openForm()">Me contacter</button>
+
+			<div class="popup" id="myForm">
+				  <form action="/action_page.php" method="post" class="form-container">
+					<div>
+					        <label for="name">Nom :</label>
+					        <input type="text" id="name" name="user_name">
+					</div>
+				    <div>
+				        <label for="surname">Prenom :</label>
+				        <input type="text" id="surname" name="user_surname">
+				    </div>
+				    <div>
+				        <label for="mail">e-mail :</label>
+				        <input type="email" id="mail" name="user_mail">
+				    </div>
+				    <div>
+				        <label for="msg">Message :</label>
+				        <textarea placeholder="Ecrire votre message..."id="msg" name="user_message"></textarea>
+				    </div>
+				    
+				        
+				    <button class="button" type="submit"><span>Envoyer</span></button>
+				    <button type="button" class="btn cancel" onclick="closeForm()">Fermer</button>
+				  </form>
+			</div>
+
+
+		<p class="pa1">
+			Actuellement étudiant en Bachelor 1 Ynov Informatique à Nantes Ynov Campus. Je suis sérieux motivé et dynamique. Intéressé par les systèmes informatiques depuis mon plus jeune âge, je reste informé aux nouvelles avancées technologiques ainsi qu'à leur fonctionnement.
+		</p>
+		<h2>Centres d'intérêt</h2>
+		<p class="pa2">	
+		• Musique (violon,piano,guitare)</br>• Sport</br>• High tech</br>• Dessin
+		</p>
+		<h2>Contact</h2>
+		<p class="pa1" class="pa6">
+			• Ledanois Thibault</br>
+			• 46 rue Saint Jacques</br>
+			• 44200 Nantes, France</br>
+			• 07 82 66 84 86</br>
+			thibault.lallierledanois@ynov.com
+		</p>
+		<a class="mariobloc" id="mariobloc"></a>
+		<a class="mariobloc2" id="mariobloc2"></a>
+		<a class="mariorepos" id="mariorepos" onclick="setTimeout(reset, 5000);"></a>
+		<a class="mariosaut" id="mariosaut"></a>
+		</div>
+	</div>
+</div>
+
+	<div class="p2" id="p2">
+	</br></br>
+		<h4 class="lignes1">EXPÉRIENCES</h4>
+		<h4 class="lignes2">PROFESSIONNELLES</h4>
+		<h5>Centre commercial Leclerc (Orvault - 44)</h5>
+		<p class="pa3">
+			Saisonnier pâtissier-traiteur • 29 juin - 27 août 2018
+			
+		</p>
+		<h5>BYSCAYLEUX (Masparraute - 64)</h5>
+		<p class="pa3">
+			Saisonnier en secteur agricole • castration de maïs. juillet 2016
+			
+		</p>
+		<h5>Salon des minéraux et fossiles (Pau - 64)</h5>
+		<p class="pa3">
+			Bénévole chargé des ventes des entrées au salon • 19-20 avril 2014
+	
+		</p>
+
+		<div class="pa4">	
+		</div>
+	
+
+		<h4 class="lignes3">FORMATIONS</h4>
+		<h5>Nantes Ynov Campus</h5>
+		<p class="pa3">
+			Ynov Informatique • Septembre 2018 - Aujourd'hui
+			</br>
+			Formation en cours Ynov informatique à Nantes Ynov Campus. Apprentissage de divers languages informatiques ainsi que diverses notions de réseau.
+			
+		</p>
+		<h5>Lycée La Colinière (Nantes - 44)</h5>
+		<p class="pa3">
+			Baccalauréat technologique spécialité STI2D SIN (Systèmes Informatiques et Numériques) • Juillet 2018
+			
+		</p>
+		<div class="pa4">	
+		</div>
+		
+	</div>
+       
+	<footer>
+		<a href="https://www.linkedin.com/in/thibault-ledanois-513944175" class="btn1"></a> 
+		<a href="https://github.com/ThibaultLl" class="btn2"></a>
+		<p>Created by Thibault LEDANOIS</br>07 82 66 84 86 • thibault.lallierledanois@ynov.com</p>
+	</footer>
+</body>
+<script>
+
+
+	function openForm() {//fonction qui se déclenche sur le click d'ouveture du formulaire
+    document.getElementById("myForm").style.display = "block";//affichage du formulaire
+	}
+
+	function closeForm() {//fonction qui se déclenche sur le click de fermeture du formulaire
+    document.getElementById("myForm").style.display = "none";//fermeture du formulaire (cache le formulaire)
+	}
+
+    
+	document.querySelector("#mariorepos").onclick = function() { //fonction qui se déclénche suivant le clic sur mario
+
+		document.querySelector("#mariorepos").style.display=(window.getComputedStyle(document.querySelector('#mariorepos')).display=='none') ? "block" : "none";
+	    document.querySelector("#mariosaut").style.display=(window.getComputedStyle(document.querySelector('#mariosaut')).display=='block') ? "none" : "block"; 
+		document.querySelector("#mariobloc").style.display=(window.getComputedStyle(document.querySelector('#mariobloc')).display=='none') ? "block" : "none"; 
+		document.querySelector("#mariobloc2").style.display=(window.getComputedStyle(document.querySelector('#mariobloc2')).display=='block') ? "none" : "block"; 
+	}
+
+	function reset(){
+		if (document.querySelector("#mariorepos").style.display=='none'){
+		 document.querySelector("#mariorepos").style.display= "block";
+		 document.querySelector("#mariosaut").style.display="none"; 
+		}
+	}
+
+</script>
+</script>
+</html>
